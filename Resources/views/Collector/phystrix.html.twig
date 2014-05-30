@@ -1,0 +1,50 @@
+{% extends '@WebProfiler/Profiler/layout.html.twig' %}
+
+{% block toolbar %}
+    {% set icon %}
+    <span>
+        <span>
+            {% if collector.commands|length %}
+                {{ collector.commands|length }} Phystrix commands executed
+            {% else %}
+                No Phystrix commands executed
+            {% endif %}
+        </span>
+    </span>
+    {% endset %}
+    {% include '@WebProfiler/Profiler/toolbar_item.html.twig' with { 'link': profiler_url } %}
+{% endblock %}
+
+{% block menu %}
+    <span class="label">
+        <strong>Phystrix</strong>
+    </span>
+{% endblock %}
+
+{% block panel %}
+    <h2>Phystrix commands executed</h2>
+    {% if collector.commands|length %}
+        <table>
+            <thead>
+            <tr>
+                <th scope="col" style="width: 25%">Command</th>
+                <th scope="col" style="width: 75%">Duration</th>
+                <th scope="col" style="width: 75%">Events</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for command in collector.commands %}
+                <tr>
+                    <th>{{ command.class }}</th>
+                    <td>{{ command.duration }} ms</td>
+                    <td>{{ command.events|join('<br/>') }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>
+            <em>No Phystrix commands have been executed</em>
+        </p>
+    {% endif %}
+{% endblock %}

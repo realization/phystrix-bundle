@@ -1,3 +1,8 @@
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/c009dadf-a219-4808-b888-e9abad9a73bf/mini.png)](https://insight.sensiolabs.com/projects/c009dadf-a219-4808-b888-e9abad9a73bf)
+[![Build Status](https://travis-ci.org/odesk/phystrix-bundle.svg)](https://travis-ci.org/odesk/phystrix-bundle)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/odesk/phystrix-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/odesk/phystrix-bundle/?branch=master)
+
+
 # Phystrix Bundle
 
 This bundle provides phystrix command factory service: `phystrix.command_factory` with default configuration

@@ -1,5 +1,5 @@
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c009dadf-a219-4808-b888-e9abad9a73bf/mini.png)](https://insight.sensiolabs.com/projects/c009dadf-a219-4808-b888-e9abad9a73bf)
-[![Build Status](https://travis-ci.org/odesk/phystrix-bundle.svg)](https://travis-ci.org/odesk/phystrix-bundle)
+[![Build Status](https://travis-ci.org/upwork/phystrix-bundle.svg)](https://travis-ci.org/upwork/phystrix-bundle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/odesk/phystrix-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/odesk/phystrix-bundle/?branch=master)
 
 
@@ -91,7 +91,7 @@ $command->execute();
 
 This file is a part of the Phystrix Bundle
 
-Copyright 2013-2015 oDesk Corporation. All Rights Reserved.
+Copyright 2013-2017 Upwork Global Inc. All Rights Reserved.
 
 This file is licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
